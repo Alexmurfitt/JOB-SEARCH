@@ -3,30 +3,63 @@ venv/
 .venv/
 env/
 venv_jobs/
-.env/
+
 # ➤ ARCHIVOS TEMPORALES Y CACHÉ
 __pycache__/
 *.py[cod]
 *.log
 *.tmp
 *.bak
+*.swp
+*.swo
 
-# ➤ ARCHIVOS GRANDES Y BINARIOS
-*.pdf
+# ➤ ARCHIVOS GRANDES Y DATOS
+*.csv
 *.tsv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.feather
+*.arrow
+
+# ➤ INFORMES Y VISUALIZACIONES
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.svg
+*.gif
+*.mp4
+
+# ➤ MODELOS, CHECKPOINTS Y TOKENS
 *.joblib
-*.ckpt
+*.pkl
 *.pt
 *.h5
+*.ckpt
 *.onnx
 *.tflite
+**/tokenizer.json
+**/vocab.txt
+**/merges.txt
+**/special_tokens_map.json
 
-# ➤ MODELOS Y CHECKPOINTS
-models/**/tokenizer.json
-models/**/vocab.txt
-ARCHIVE/
+# ➤ DIRECTORIOS GRANDES Y NO VERSIONABLES
 catboost_info/
+ARCHIVE/
+models/
+artifacts/
+data/
+docs/
+img/
+reports/
+output/
+checkpoints/
 
 # ➤ ARCHIVOS DE SISTEMA
 .DS_Store
 Thumbs.db
+desktop.ini

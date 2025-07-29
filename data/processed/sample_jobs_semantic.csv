@@ -1,9 +1,0 @@
-title,description,salary,extracted_entities,education_azure,language_excel,education_sql
-Data Analyst,Bachelor's degree in Statistics or Mathematics required. Strong skills in SQL and Python. Experience with Tableau preferred.,"$90,000 - $110,000",[],0,0,0
-Senior Data Analyst,Master's in Data Science or similar field. Must have experience with Power BI and Azure. Python and R are essential.,"$110,000 - $130,000",['Education:azure'],1,0,0
-Business Data Analyst,Bachelor's degree in Business or related field. Proficiency in Excel and Tableau. Knowledge of Python is a plus.,"$75,000 - $95,000",['Language:excel'],0,1,0
-Data Analyst,Google Data Analytics certification preferred. Strong Excel and SQL required. Bachelor's degree desired.,"$85,000 - $100,000",[],0,0,0
-Junior Data Analyst,"Bachelor’s degree or certification in analytics. Experience with Python, Excel, and Power BI.","$65,000 - $80,000",[],0,0,0
-Data Analyst,"IBM Data Science Certificate, Bachelor's in Computer Science, strong skills in SQL, Python, and statistics.","$95,000 - $115,000",['Education:sql'],0,0,1
-Marketing Data Analyst,Bachelor's degree in Marketing or Statistics. Familiarity with data visualization tools like Tableau and Power BI.,"$70,000 - $90,000",[],0,0,0
-Healthcare Data Analyst,"Master's degree in Health Informatics. Required skills: Python, SQL, Excel. Preferred: R, Tableau.","$105,000 - $125,000",[],0,0,0

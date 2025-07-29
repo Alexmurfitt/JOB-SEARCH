@@ -1,4 +1,0 @@
-{"tokens": ["Se","busca","un","Analista","de","Datos","con","Python","y","SQL","."],
- "labels": ["O","O","O","O","O","O","O","B-Skill","O","B-Skill","O"]}
-{"tokens": ["Requiere","certificación","AWS","Certified","Data","Analytics","."],
- "labels": ["O","O","B-Certification","I-Certification","I-Certification","I-Certification","O"]}
