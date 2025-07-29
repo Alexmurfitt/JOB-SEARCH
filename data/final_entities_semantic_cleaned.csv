@@ -1,0 +1,36 @@
+description_id,entity,entity_cleaned,semantic_class
+0,Statistics,statistics,Skill
+0,SQL,sql,Skill
+0,Python,python,Skill
+0,Table,table,Other
+0,##au,##au,Other
+1,Data Science,data science,Other
+1,Power BI,power bi,Skill
+1,Azure,azure,Other
+1,Python,python,Skill
+1,R,r,Skill
+2,Business,business,Other
+2,Excel,excel,Skill
+2,Tableau,tableau,Skill
+2,Python,python,Skill
+3,Google Data Analytics,google data analytics,Certification
+3,Strong,strong,Other
+3,Excel,excel,Skill
+3,SQL,sql,Skill
+4,Python,python,Skill
+4,Excel,excel,Skill
+4,Power BI,power bi,Skill
+5,IBM Data Science Certificate,ibm data science certificate,Other
+5,Computer Science,computer science,Other
+5,SQL,sql,Skill
+5,Python,python,Skill
+6,Marketing,marketing,Other
+6,Tableau,tableau,Skill
+6,Power,power,Other
+6,B,b,Other
+6,##I,##i,Other
+7,Informatics,informatics,Other
+7,Python,python,Skill
+7,SQL,sql,Skill
+7,Excel,excel,Skill
+7,Table,table,Other

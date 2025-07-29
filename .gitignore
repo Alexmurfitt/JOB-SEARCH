@@ -1,0 +1,32 @@
+# ➤ ENTORNOS VIRTUALES
+venv/
+.venv/
+env/
+venv_jobs/
+.env/
+# ➤ ARCHIVOS TEMPORALES Y CACHÉ
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+*.bak
+
+# ➤ ARCHIVOS GRANDES Y BINARIOS
+*.pdf
+*.tsv
+*.joblib
+*.ckpt
+*.pt
+*.h5
+*.onnx
+*.tflite
+
+# ➤ MODELOS Y CHECKPOINTS
+models/**/tokenizer.json
+models/**/vocab.txt
+ARCHIVE/
+catboost_info/
+
+# ➤ ARCHIVOS DE SISTEMA
+.DS_Store
+Thumbs.db

@@ -1,0 +1,148 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+venv_jobs/
+.env/
+.envrc
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Pytest
+.pytest_cache/
+
+# mypy, pyright
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# PyCharm / VSCode
+.idea/
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Data
+*.csv
+*.tsv
+*.db
+*.sqlite3
+
+# Ignore exported artifacts
+*.pdf
+*.png
+*.jpg
+*.svg
+
+# Optional: logs or cache from Streamlit or other tools
+.streamlit/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+venv_jobs/
+.env/
+.envrc
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Pytest
+.pytest_cache/
+
+# mypy, pyright
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# PyCharm / VSCode
+.idea/
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Data
+*.csv
+*.tsv
+*.db
+*.sqlite3
+
+# Ignore exported artifacts
+*.pdf
+*.png
+*.jpg
+*.svg
+
+# Optional: logs or cache from Streamlit or other tools
+.streamlit/

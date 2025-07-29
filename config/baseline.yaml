@@ -1,0 +1,14 @@
+data:
+  train_path: "../data/splits/train.csv"
+  holdout_path: "../data/splits/holdout.csv"
+target: "salary"
+transformer:
+  numeric_cols: []
+  categorical_cols:
+    - "title"
+  text_cols:
+    - "description"
+
+baseline:
+  output_dir: "../models/advanced"
+

@@ -1,0 +1,7 @@
+
+# pipeline.yaml: definición de flujo completo
+
+steps:
+  - etl
+  - train
+  - evaluate

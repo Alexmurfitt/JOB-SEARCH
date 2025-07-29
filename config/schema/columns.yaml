@@ -1,0 +1,12 @@
+
+# columns.yaml: define esquema de columnas de los datasets
+
+features:
+  - description_id
+  - title
+  - description
+  - certification_google_data_analytics
+  # ... añade el resto de columnas aquí
+
+target:
+  salary: float
