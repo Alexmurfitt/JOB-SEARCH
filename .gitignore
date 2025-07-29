@@ -13,7 +13,7 @@ __pycache__/
 *.swp
 *.swo
 
-# ➤ ARCHIVOS GRANDES Y DATOS
+# ➤ ARCHIVOS DE DATOS PESADOS O INTERMEDIOS
 *.csv
 *.tsv
 *.xlsx
@@ -22,8 +22,10 @@ __pycache__/
 *.parquet
 *.feather
 *.arrow
+*.pkl
+*.joblib
 
-# ➤ INFORMES Y VISUALIZACIONES
+# ➤ INFORMES Y VISUALIZACIONES PESADAS
 *.pdf
 *.png
 *.jpg
@@ -34,12 +36,8 @@ __pycache__/
 *.gif
 *.mp4
 
-# ➤ MODELOS, CHECKPOINTS Y TOKENS
-*.joblib
-*.pkl
+# ➤ ARCHIVOS DE MODELOS
 *.pt
-*.h5
-*.ckpt
 *.onnx
 *.tflite
 **/tokenizer.json
@@ -47,19 +45,28 @@ __pycache__/
 **/merges.txt
 **/special_tokens_map.json
 
-# ➤ DIRECTORIOS GRANDES Y NO VERSIONABLES
+# ➤ CARPETAS NO VERSIONABLES
 catboost_info/
-ARCHIVE/
-models/
 artifacts/
-data/
-docs/
-img/
+ARCHIVE/
+data/raw/
+data/features/
+data/splits/
+data/new_splits/
+data/annotate/
+data/annotated/
+models/salary_model/
+models/baseline/
+models/catboost_info/
 reports/
-output/
-checkpoints/
+img/
 
-# ➤ ARCHIVOS DE SISTEMA
+# ➤ ARCHIVOS DEL SISTEMA
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# ➤ ARCHIVOS PERSONALES
+estructura_actual.txt
+auditoria_resultados.txt
+reestructuracion_log.txt
