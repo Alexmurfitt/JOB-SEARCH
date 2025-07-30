@@ -1,12 +1,10 @@
 
+---
+
 ````markdown
 # 🔍 JOB SEARCH – Sistema Inteligente de Extracción, Análisis y Recomendación de Empleo
 
-**JOB SEARCH** es una plataforma modular y escalable de análisis de empleo basada en datos reales. 
-Está diseñada para extraer automáticamente ofertas laborales desde múltiples portales, 
-analizar descripciones con técnicas de NLP, predecir salarios utilizando modelos de machine learning, 
-y recomendar formaciones con mayor retorno de inversión. Su arquitectura se basa en scraping avanzado, 
-procesamiento semántico, aprendizaje automático e interfaces interactivas.
+**JOB SEARCH** es una plataforma modular y escalable de análisis de empleo basada en datos reales. Está diseñada para extraer automáticamente ofertas laborales desde múltiples portales, analizar descripciones con técnicas de NLP, predecir salarios utilizando modelos de machine learning, y recomendar formaciones con mayor retorno de inversión. Su arquitectura se basa en scraping avanzado, procesamiento semántico, aprendizaje automático e interfaces interactivas.
 
 ---
 
