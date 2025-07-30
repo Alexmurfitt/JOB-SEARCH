@@ -77,10 +77,10 @@ SEARCH_JOB/
 2. Crea un archivo `.env` con tus credenciales PostgreSQL:
 
 ```env
-DB_HOST=localhost
-DB_NAME=jobs_db
-DB_USER=postgres
-DB_PASS=tu_contraseña
+DB_HOST=
+DB_NAME=
+DB_USER=
+DB_PASS=
 ```
 
 3. Ejecuta los módulos de scraping desde `scrapy_employment_scraper/`.
@@ -118,16 +118,73 @@ __pycache__/
 
 ---
 
-## 📌 Estado actual del proyecto
+✅ Estado del Proyecto: Plataforma de Recomendación Formativa Basada en Empleo Real
+🟢 Fase 1. Análisis, planificación y diseño
+Tarea	Estado
+Análisis del objetivo (identificar formaciones con mayor impacto salarial)	✅ Completado
+Investigación de fuentes de datos (plataformas de empleo globales)	✅ Completado
+Selección de arquitectura general del sistema	✅ Completado
+Definición de flujos de trabajo y módulos funcionales	✅ Completado
+Herramientas seleccionadas (Scrapy, Playwright, ML, SHAP, Streamlit…)	✅ Completado
 
-🔧 En fase de consolidación: limpieza de estructura, optimización del código, documentación final y despliegue remoto.
+🟢 Fase 2. Ingeniería de scraping y recolección de datos
+Tarea	Estado
+Identificación de las 10 principales plataformas de empleo global	✅ Completado
+Diseño de scraper modular con tolerancia a fallos	✅ Completado
+Scraping funcional con Playwright (dinámico, multi-plataforma)	🟡 En desarrollo avanzado
+Normalización de datos extraídos (HTML → JSON/CSV limpios)	🟡 En desarrollo avanzado
+Gestión de bloqueos (proxies, headers, retries, captchas)	🟡 En desarrollo
+Guardado en estructura local CSV o MongoDB	🔵 Listo para implementar
 
----
+🟢 Fase 3. Procesamiento de lenguaje natural (NLP)
+Tarea	Estado
+Limpieza de descripciones (remoción HTML, stopwords, etc.)	🔵 Listo para implementar
+Detección de entidades clave (skills, certs, grados)	🔵 Listo para implementar
+Fine-tuning de modelo BERT o uso de spaCy/NER preentrenado	🔵 Listo para implementar
+Normalización semántica (sinónimos, agrupaciones)	🔵 Listo para implementar
+Generación de dataset estructurado	🔵 Listo para implementar
 
-## 📬 Contacto
+🟡 Fase 4. Modelado predictivo de salarios
+Tarea	Estado
+Ingeniería de features (dummies, embeddings, experiencia, etc.)	🔵 Planificado
+Entrenamiento con XGBoost, LightGBM, redes neuronales	🔵 Planificado
+Optimización con Optuna / CV	🔵 Planificado
+Validación con MAE, R²	🔵 Planificado
+Explicabilidad con SHAP	🔵 Planificado
+Ensemble final con modelos combinados	🔵 Planificado
 
-Creado y mantenido por **Alexander Murfitt Santana**.  
-GitHub: [@Alexmurfitt](https://github.com/Alexmurfitt)
+🟢 Fase 5. Recomendación personalizada y ROI
+Tarea	Estado
+Simulación de escenarios (añadir formaciones y estimar incremento)	🔵 Listo para implementar
+Cálculo de ROI y eficiencia de cada formación	🔵 Listo para implementar
+Generación automática de ranking personalizado	🔵 Listo para implementar
+
+🟢 Fase 6. Visualización, reporting y API
+Tarea	Estado
+Diseño del dashboard en Streamlit	🔵 Listo para implementar
+Visualización de resultados y simulaciones	🔵 Listo para implementar
+Generación de informes PDF ejecutivos	🔵 Listo para implementar
+API REST con FastAPI (predicción y sugerencia)	🔵 Listo para implementar
+
+🟢 Fase 7. Despliegue, automatización y monitoreo
+Tarea	Estado
+Contenerización con Docker	🔵 Planificado
+Planificación diaria con Airflow / Task Scheduler	🔵 Planificado
+Sistema de logs y errores	🔵 Planificado
+Monitorización y retraining automático	🔵 Planificado
+
+📌 Resumen por estado
+Estado	Tareas clave (resumen)
+✅ Completado	Diseño general, selección tecnológica, definición de arquitectura, análisis semántico
+🟡 En desarrollo	Scraper multi-plataforma (Playwright), normalización de scraping
+🔵 Listo para implementar	NLP (NER), modelado, recomendación, dashboard, API, reporting, despliegue
+🔴 Pendiente	Retraining automático, integración total de módulos
+
+🚀 Siguiente paso recomendado
+Finalizar la fase de scraping robusto para las 10 plataformas, almacenar los datos en CSV o MongoDB, y comenzar inmediatamente con el módulo NLP (extracción de entidades) para preparar el dataset final de entrenamiento.
+
+
+
 
 ---
 
