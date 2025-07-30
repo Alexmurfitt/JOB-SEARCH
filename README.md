@@ -1,7 +1,3 @@
-
----
-
-````markdown
 # 🔍 JOB SEARCH – Sistema Inteligente de Extracción, Análisis y Recomendación de Empleo
 
 **JOB SEARCH** es una plataforma modular y escalable de análisis de empleo basada en datos reales. Está diseñada para extraer
@@ -9,7 +5,7 @@
  utilizando modelos de machine learning, y recomendar formaciones con mayor retorno de inversión. Su arquitectura se basa en 
  scraping avanzado, procesamiento semántico, aprendizaje automático e interfaces interactivas.
 
----
+
 
 ## 🎯 Objetivos del sistema
 
@@ -22,7 +18,7 @@
 - Recomendar cursos con mayor beneficio potencial.
 - *(Opcional)* Almacenar los datos en MongoDB o PostgreSQL.
 
----
+
 
 ## ⚙️ Tecnologías utilizadas
 
@@ -41,7 +37,7 @@
 | Entornos y versiones   | .env, venv, .gitignore, Git                                              |
 
 ---
-
+````markdown
 ## 🧱 Estructura del Proyecto
 
 ```bash
