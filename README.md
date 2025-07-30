@@ -40,7 +40,6 @@
 ````markdown
 ## 🧱 Estructura del Proyecto
 
-```bash
 SEARCH_JOB/
 ├── config/                      # Configuración, YAMLs, scripts de entorno
 ├── data/                        # Datos estructurados, CSVs, procesados (no versionados)
