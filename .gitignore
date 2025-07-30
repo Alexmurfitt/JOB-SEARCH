@@ -6,6 +6,8 @@ venv/
 env/
 venv_jobs/
 *.egg-info/
+.env
+/config/requirements.txt
 
 # ===================================================
 # ➤ CACHÉS, LOGS Y ARCHIVOS TEMPORALES
@@ -98,3 +100,8 @@ estructura_actual.txt
 auditoria_resultados.txt
 reestructuracion_log.txt
 all_files.txt
+
+# ===================================================
+# ➤ CARPETAS QUE NO DEBEN SUBIRSE
+# ===================================================
+docs/
