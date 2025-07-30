@@ -98,19 +98,28 @@ SEARCH_JOB/
 ## 🚀 Ejecución del sistema
 
 ```bash
-# 1. Clona el repositorio y crea el entorno
+# 1. Clona el repositorio y accede al directorio
 git clone https://github.com/Alexmurfitt/JOB-SEARCH.git
 cd JOB-SEARCH
+
+# 2. Crea y activa el entorno virtual
 python -m venv venv_jobs
-.\venv_jobs\Scripts\activate
+.\venv_jobs\Scripts\activate    # En Windows
+# source venv_jobs/bin/activate # En Linux/macOS
 
-# 2. Instala las dependencias reales del sistema
-pip install -r requirements.txt
+# 3. Instala las dependencias
+pip install -r config/requirements.txt
 
-# 3. Configura tu archivo .env si vas a usar MongoDB o PostgreSQL
-```
+# 4. Instala navegadores para Playwright
+playwright install
+🛠️ Configura tu entorno
+Crea un archivo .env en el directorio config/ basándote en el archivo de ejemplo:
 
----
+config/.env.example
+Edita el archivo .env si deseas usar PostgreSQL o MongoDB.
+
+# 5. Ejecuta el spider
+scrapy crawl indeed
 
 ## 🔧 Ejecución modular
 
