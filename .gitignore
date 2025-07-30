@@ -1,10 +1,15 @@
-# ➤ ENTORNOS VIRTUALES
+# ===================================================
+# ➤ ENTORNOS VIRTUALES Y PAQUETES
+# ===================================================
 venv/
 .venv/
 env/
 venv_jobs/
+*.egg-info/
 
-# ➤ ARCHIVOS TEMPORALES Y CACHÉ
+# ===================================================
+# ➤ CACHÉS, LOGS Y ARCHIVOS TEMPORALES
+# ===================================================
 __pycache__/
 *.py[cod]
 *.log
@@ -12,21 +17,42 @@ __pycache__/
 *.bak
 *.swp
 *.swo
+*.tfevents*
 
-# ➤ ARCHIVOS DE DATOS PESADOS O INTERMEDIOS
+# ===================================================
+# ➤ ARCHIVOS DE DATOS PESADOS / INTERMEDIOS
+# ===================================================
 *.csv
 *.tsv
+*.json
+*.jsonl
 *.xlsx
 *.xls
-*.json
 *.parquet
 *.feather
 *.arrow
+*.npy
+*.pdf
+
+# ===================================================
+# ➤ MODELOS ENTRENADOS Y SERIALIZADOS
+# ===================================================
 *.pkl
 *.joblib
+*.bin
+*.pt
+*.onnx
+*.tflite
 
-# ➤ INFORMES Y VISUALIZACIONES PESADAS
-*.pdf
+# Archivos auxiliares de tokenización
+**/tokenizer.json
+**/vocab.txt
+**/merges.txt
+**/special_tokens_map.json
+
+# ===================================================
+# ➤ MULTIMEDIA, GRÁFICAS Y VISUALIZACIONES
+# ===================================================
 *.png
 *.jpg
 *.jpeg
@@ -36,37 +62,39 @@ __pycache__/
 *.gif
 *.mp4
 
-# ➤ ARCHIVOS DE MODELOS
-*.pt
-*.onnx
-*.tflite
-**/tokenizer.json
-**/vocab.txt
-**/merges.txt
-**/special_tokens_map.json
-
-# ➤ CARPETAS NO VERSIONABLES
-catboost_info/
+# ===================================================
+# ➤ CARPETAS DE MODELOS, DATOS Y OUTPUTS NO VERSIONABLES
+# ===================================================
+# Artifacts y modelos
 artifacts/
-ARCHIVE/
+models/
+catboost_info/
+
+# Datos en todas sus fases
+data/
 data/raw/
 data/features/
 data/splits/
 data/new_splits/
 data/annotate/
 data/annotated/
-models/salary_model/
-models/baseline/
-models/catboost_info/
+
+# Informes, métricas, figuras y visualizaciones
 reports/
 img/
+ARCHIVE/
 
-# ➤ ARCHIVOS DEL SISTEMA
+# ===================================================
+# ➤ ARCHIVOS DEL SISTEMA OPERATIVO
+# ===================================================
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# ➤ ARCHIVOS PERSONALES
+# ===================================================
+# ➤ ARCHIVOS PERSONALES / LOCALES / NO VERSIONABLES
+# ===================================================
 estructura_actual.txt
 auditoria_resultados.txt
 reestructuracion_log.txt
+all_files.txt
