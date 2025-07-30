@@ -14,7 +14,6 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy_employment_scraper.middlewares.RandomProxyMiddleware': 410,
 }
 
-
 # Playwright para contenido dinámico
 DOWNLOAD_HANDLERS = {
     "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
@@ -23,7 +22,6 @@ DOWNLOAD_HANDLERS = {
 
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 
-
 PLAYWRIGHT_BROWSER_TYPE = 'chromium'
 PLAYWRIGHT_LAUNCH_OPTIONS = {
     'headless': True,
@@ -31,17 +29,16 @@ PLAYWRIGHT_LAUNCH_OPTIONS = {
     'args': ['--disable-blink-features=AutomationControlled']
 }
 
-# Configuración para rotación
-USER_AGENT_LIST_PATH = "user_agents.txt"
-ROTATING_PROXY_LIST_PATH = "proxies.txt"
+# Configuración para rotación de agentes y proxies
+USER_AGENT_LIST_PATH = "config/user_agents.txt"        # 🔧 Ruta corregida
+ROTATING_PROXY_LIST_PATH = "config/proxies.txt"
 
-
-# Pipeline para guardar en PostgreSQL
+# Pipeline para guardar en PostgreSQL (opcional)
 ITEM_PIPELINES = {
     'scrapy_employment_scraper.pipelines.PostgresPipeline': 300,
 }
 
-# Tiempos y errores
+# Tiempos, errores y logs
 RETRY_TIMES = 3
 DOWNLOAD_TIMEOUT = 20
 ROBOTSTXT_OBEY = False

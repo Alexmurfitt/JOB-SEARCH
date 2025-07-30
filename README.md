@@ -84,6 +84,16 @@ SEARCH_JOB/
 * Simulación de escenarios y ranking de cursos con mayor retorno.
 
 ---
+# 🔗 4. Archivos clave que deben mantenerse
+               Archivo	                                  Función
+- config/user_agents.txt	                   Lista de User-Agents rotatorios
+- config/proxies.txt	                       Lista de proxies opcionales
+- scrapy_employment_scraper/settings.py	       Configuración general del crawler
+- scrapy_employment_scraper/spiders/indeed.py  Spider para Indeed
+- scrapy_employment_scraper/pipelines.py	   Guardado en CSV o PostgreSQL
+- scrapy_employment_scraper/middlewares.py	   Rotación de headers/proxies
+- scripts/	                                   Preprocesamiento, NLP, modelos ML
+
 
 ## 🚀 Ejecución del sistema
 
