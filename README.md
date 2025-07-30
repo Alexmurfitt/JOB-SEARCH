@@ -1,121 +1,153 @@
-# 🔎 SEARCH_JOB – Sistema Inteligente de Extracción y Clasificación de Empleo
-
-`SEARCH_JOB` es una plataforma de análisis inteligente diseñada para **extraer, procesar, analizar y clasificar ofertas de empleo** desde múltiples fuentes web, con el objetivo de generar conocimiento estructurado y detectar patrones relevantes del mercado laboral. Este sistema combina **scraping, procesamiento lingüístico, modelado machine learning y visualización de datos**, todo orquestado en una arquitectura modular y escalable.
+Aquí tienes tu contenido perfectamente formateado en **estilo Markdown para `README.md`**, listo para copiar y pegar:
 
 ---
 
-## 📌 Objetivos principales
+````markdown
+# 🔍 JOB SEARCH – Sistema Inteligente de Extracción, Análisis y Recomendación de Empleo
 
-- Automatizar la extracción de ofertas de empleo de múltiples portales web.
-- Limpiar, transformar y estandarizar la información.
-- Detectar y etiquetar entidades clave (título, salario, empresa, ubicación, tecnologías, etc.).
-- Clasificar las ofertas según distintos modelos (ej. NLP, catboost).
-- Visualizar insights relevantes y exportar reportes.
-- Guardar la información estructurada en una base de datos relacional PostgreSQL.
+**JOB SEARCH** es una plataforma modular y escalable de análisis de empleo basada en datos reales. Está diseñada para extraer automáticamente ofertas laborales desde múltiples portales, analizar descripciones con técnicas de NLP, predecir salarios utilizando modelos de machine learning, y recomendar formaciones con mayor retorno de inversión. Su arquitectura se basa en scraping avanzado, procesamiento semántico, aprendizaje automático e interfaces interactivas.
 
 ---
 
-## ⚙️ Tecnologías y herramientas utilizadas
+## 🎯 Objetivos del sistema
 
-| Categoría | Herramientas |
-|----------|--------------|
-| Lenguaje principal | `Python 3.12` |
-| Scraping | `Scrapy`, `requests`, `BeautifulSoup` |
-| Procesamiento de texto | `spaCy`, `NLTK`, `re` |
-| Modelado ML | `CatBoost`, `Scikit-learn`, `Joblib` |
-| Visualización | `Matplotlib`, `Seaborn`, `Plotly`, `PDF` |
-| Base de datos | `PostgreSQL`, `psycopg2` |
-| Entorno virtual | `venv_jobs` |
-| Control de versiones | `Git`, `.gitignore` |
-| Organización | `scripts/`, `models/`, `data/`, `reports/`, `config/`, `docs/` |
-| Infraestructura | `.env` para credenciales, carpetas excluidas con `.gitignore` |
+- Extraer automáticamente ofertas desde portales globales como LinkedIn o Indeed.
+- Limpiar, transformar y estructurar los datos textuales con precisión semántica.
+- Detectar entidades clave (puesto, empresa, tecnología, salario...).
+- Clasificar y analizar ofertas con modelos ML supervisados y reglas heurísticas.
+- Visualizar información clave mediante dashboards y generar informes PDF.
+- Estimar el ROI de formaciones según impacto en salario esperado.
+- Recomendar cursos con mayor beneficio potencial.
+- *(Opcional)* Almacenar los datos en MongoDB o PostgreSQL.
 
 ---
 
-## 🧱 Estructura del proyecto
+## ⚙️ Tecnologías utilizadas
 
-```
+| Área                   | Herramientas principales                                                 |
+|------------------------|---------------------------------------------------------------------------|
+| Lenguaje principal     | Python 3.12                                                               |
+| Web Scraping           | Scrapy, Playwright, BeautifulSoup, requests, proxies dinámicos           |
+| Procesamiento NLP      | spaCy, transformers, re, nltk, sklearn, pandas                           |
+| Extracción de entidades| NER personalizado, BERT, spaCy                                           |
+| Modelado Predictivo    | XGBoost, LightGBM, Optuna, SHAP, CatBoost                                |
+| Recomendación & ROI    | Algoritmo personalizado de ranking y simulación de impacto formativo     |
+| Visualización          | Streamlit, Plotly, Matplotlib, Seaborn                                  |
+| Backend & API          | FastAPI, Pydantic, Uvicorn                                               |
+| Automatización         | Airflow, Task Scheduler, Docker *(planificado)*                         |
+| Almacenamiento         | CSV, JSON, MongoDB, PostgreSQL *(opcional)*                             |
+| Entornos y versiones   | .env, venv, .gitignore, Git                                              |
+
+---
+
+## 🧱 Estructura del Proyecto
+
+```bash
 SEARCH_JOB/
-├── .github/                      # Workflows o acciones automatizadas
-├── .gitignore                   # Exclusiones de Git
-├── artifacts/                   # Resultados intermedios o modelos
-├── config/                      # Configuración y scripts de limpieza
-│   └── reorganizar_estructura_jobs.ps1
-├── data/                        # Conjuntos de datos estructurados
-│   ├── raw/
-│   ├── processed/
-├── docs/                        # Documentación técnica o referencias
-├── img/                         # Gráficos usados en informes o presentaciones
-├── models/                      # Modelos entrenados y recursos NLP
-│   └── ner_model/, ner_ng/, catboost_info/
-├── reports/                     # Informes generados (PDFs, visualizaciones)
-├── scripts/                     # Código fuente modular
-│   ├── scraping/
-│   ├── preprocessing/
-│   ├── nlp/
-│   ├── feature_engineering/
-│   ├── model_training/
-│   └── analysis/
-├── scrapy_employment_scraper/  # Proyecto Scrapy para fuentes web
-├── .env                         # Variables de entorno (NO subir a GitHub)
-└── README.md                    # Este archivo
-```
+├── config/                      # Configuración, YAMLs, scripts de entorno
+├── data/                        # Datos estructurados, CSVs, procesados (no versionados)
+├── docs/                        # Documentación técnica y funcional
+├── img/                         # Visualizaciones y recursos gráficos
+├── models/                      # Modelos entrenados (NER, clasificadores)
+├── reports/                     # Informes en PDF generados automáticamente
+├── scripts/                     # Código fuente organizado por función
+│   ├── scraping/                # Scrapers (Scrapy, Playwright)
+│   ├── preprocessing/           # Limpieza de texto, normalización
+│   ├── nlp/                     # Extracción de entidades (NER)
+│   ├── model_training/          # Entrenamiento y validación de modelos ML
+│   ├── prediction/              # Predicción y clasificación de nuevas ofertas
+│   ├── feature_engineering/     # Generación y análisis de variables
+│   ├── dashboard/               # Visualización en Streamlit
+│   └── informe/                 # Informes PDF y visualizaciones ejecutivas
+├── scrapy_employment_scraper/  # Proyecto Scrapy funcional
+├── .env                         # Variables de entorno privadas
+├── requirements.txt             # Dependencias del sistema
+└── README.md                    # Descripción general del sistema
+````
 
 ---
 
-## 🧠 Modelos incluidos
+## 🧠 Modelos y lógica implementada
 
-- **NER personalizado (spaCy)**: Reconocimiento de entidades como "Empresa", "Tecnología", "Ubicación", "Salario".
-- **CatBoostClassifier**: Modelo entrenado para clasificar ofertas de empleo por sector o tipo de perfil.
-- **Reglas heurísticas y limpieza avanzada**: Para corrección de ruido textual y deduplicación.
+### 🔹 NER (Reconocimiento de Entidades Nombradas)
+
+* Extracción de: empresa, tecnología, ubicación, nivel, experiencia, idiomas, salario.
+* Modelos basados en `spaCy` y `transformers` (BERT).
+
+### 🔹 Clasificación y predicción
+
+* Clasificadores (ej. `CatBoost`) para tipos de empleo.
+* Modelos regresivos (`XGBoost`, `LightGBM`) para predicción salarial.
+* Optimización con `Optuna`.
+* Explicabilidad mediante `SHAP`.
+
+### 🔹 Recomendador con ROI
+
+* Algoritmo que estima el incremento salarial tras realizar una formación.
+* Simulación de escenarios y ranking de cursos con mayor retorno.
 
 ---
 
 ## 🚀 Ejecución del sistema
 
-1. Clona el repositorio y activa el entorno virtual `venv_jobs`.
-2. Crea un archivo `.env` con tus credenciales PostgreSQL:
+```bash
+# 1. Clona el repositorio y crea el entorno
+git clone https://github.com/Alexmurfitt/JOB-SEARCH.git
+cd JOB-SEARCH
+python -m venv venv_jobs
+.\venv_jobs\Scripts\activate
 
-```env
-DB_HOST=
-DB_NAME=
-DB_USER=
-DB_PASS=
+# 2. Instala las dependencias reales del sistema
+pip install -r requirements.txt
+
+# 3. Configura tu archivo .env si vas a usar MongoDB o PostgreSQL
 ```
 
-3. Ejecuta los módulos de scraping desde `scrapy_employment_scraper/`.
-4. Lanza el pipeline de limpieza, modelado y análisis desde `scripts/`.
+---
+
+## 🔧 Ejecución modular
+
+* **Scraping** → `scripts/scraping/` o `scrapy_employment_scraper/`
+* **Preprocesado** → `scripts/preprocessing/`
+* **NER y NLP** → `scripts/nlp/`
+* **Modelado** → `scripts/model_training/`
+* **Recomendación y ROI** → `scripts/prediction/`
+* **Dashboard** → `scripts/dashboard/app.py`
+* **Informes PDF** → `scripts/informe/generar_informe_data_analyst.py`
 
 ---
 
-## 📤 Exportación y visualización
+## 📤 Exportación y Visualización
 
-- Los resultados se exportan a PDF (`reports/`) y se pueden consultar en dashboards personalizados.
-- Los modelos y datos se almacenan localmente en `models/` y `data/`.
+* Resultados exportados a `reports/` (PDFs, gráficos).
+* Interfaz opcional en Streamlit para exploración interactiva.
+* Datos intermedios y finales almacenados en `data/` y `models/`.
 
 ---
 
-## ❌ Exclusiones importantes (.gitignore)
+## 🛡️ Exclusiones clave (.gitignore)
 
-```bash
-# Entornos virtuales
-venv_jobs/
+```gitignore
+# Entornos y secretos
+.venv/
 .env
 
-# Modelos pesados
+# Archivos pesados o no versionables
+*.joblib
+*.pkl
+*.pt
+*.bin
+*.pdf
+*.tsv
+*.tmp
+*.log
+__pycache__/
 models/**/tokenizer.json
 models/**/vocab.txt
 catboost_info/
-*.joblib
-
-# Archivos intermedios o binarios
-*.pdf
-*.pt
-*.tsv
-*.tmp
-__pycache__/
+data/
+artifacts/
 ```
-
 ---
 
 # ✅ Estado del Proyecto: Plataforma de Recomendación Formativa Basada en Empleo Real
